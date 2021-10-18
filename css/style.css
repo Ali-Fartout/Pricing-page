@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* Utilities */
+
+.top-header{
+    text-align: center;
+    margin-top: 2.5em;
+    padding: 1rem;
+}
+
+.toggle-switch{
+    grid-template: "a b c";
+
+    margin: 2rem;
+    display : grid;
+    grid-template-columns: 85px 85px 70px;
+    justify-content: center;
+
+
+}
+.toggle {
+    position : relative ;
+    display: inline-block;
+    cursor: pointer;
+    grid-area: b;
+    width : 57px;
+    height : 30px;
+    background-color: rgba(126,130,229,255);
+    border-radius: 30px;
+
+}
+
+
+.toggle::after {
+
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: white;
+    top: 2.7px;
+    left:2px;
+    transition:  all 0.5s;
+}
+
+
+
+.checkbox:checked + .toggle::after {
+    left : 30px;
+}
+
+
+
+.checkbox {
+    display : none;
+}
+
+/* title */
+
+#title{
+    color:rgba(118,121,145,255);
+    margin: auto;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+/* toggle */
+#slider{
+    justify-self:center;
+}
+
+
+#toggle-label-left{
+    color: rgba(186,186,196,255);
+    grid-area: a;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 5px;
+    font-size: 20px;
+}
+#toggle-label-right{
+    color: rgba(186,186,196,255);
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: c;
+    top: 5px;
+    font-size: 20px;
+}
+/* Boxes */
+
+.prices{
+    display: grid;
+    grid-template: "a b c";
+    justify-content: center;
+
+}
+.box-price{
+    margin: 13px;
+    width:200px;
+    line-height: 2.5;
+    text-align:center;
+    color: rgba(74,77,95,255)
+
+}
+.box-price h3{
+    height: 15px;
+
+}
+
+.box-price a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 70px ;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgba(125,128,198,255);
+
+
+}
+.box-price p:first-of-type{
+    font-size: 50px;
+    height: 100px;
+    text-align:center;
+}
+.middle-box{
+    background-color:rgba(125,128,198,255);
+    border-radius: 5px;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 320px;
+
+}
+
+.middle-box a{
+    background-color:white;
+    color: rgba(125,128,198,255);
+    border-radius: 5px;
+
+}
+.middle-box p{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+}

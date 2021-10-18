@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <title>Pricing Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"  rel="stylesheet">
+
 </head>
 <body>
+
     <section class="top-header">
         <h2 id="title">Our Pricing</h2>
-        <input type="checkbox" id="toggle-switch">
+        <div class="toggle-switch">
+            <input type="checkbox" id="switch" name="checkbox" class="checkbox">
+            <label for="switch" id ="slider" class="toggle"></label>
+            <label for="switch" id="toggle-label-left">Annually</label>
+            <label for="switch" id="toggle-label-right">Monthly</label>
+        </div>
     </section>
+    <section class="prices">
+        <div class="box-price side-box" id="left">
+            <h3>Basic</h3>
+            <p class="price">&#36; 19.99</p>
+            <p> 500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p>Send up to 3 GB</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="box-price middle-box" id="middle">
+            <h3>Professional</h3>
+            <p class="price">&#36; 24.99</p>
+            <p> 1 TB Storage</p>
+            <p> 5 Users Allowed</p>
+            <p>Send up to 10 GB</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="box-price side-box" id="right">
+            <h3>Master</h3>
+            <p class="price">&#36; 39.99</p>
+            <p> 2 TB Storage</p>
+            <p>10 Users Allowed</p>
+            <p>Send up to 20 GB</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/controller.js"></script>
+
+
 </body>
 </html>
