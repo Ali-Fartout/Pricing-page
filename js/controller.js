@@ -6,7 +6,6 @@ priceList = {
     '$ 249.99':'$ 24.99',
     '$ 399.99':'$ 39.99'
 }
-
 $('document').ready(function () {
     $('input[name=checkbox]').change(function() {
         if ($(this).is(':checked')) {
