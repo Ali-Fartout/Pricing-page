@@ -1,0 +1,27 @@
+@media(max-width:794px){
+
+    .prices{
+        display: grid;
+        grid-template: "a"
+                       "b"
+                       "c";
+
+        justify-content: center;
+
+    }
+    #left{
+        grid-area:a;
+
+        padding:1rem;
+    }
+    #middle{
+        grid-area:b;
+
+        padding:1rem;
+    }
+    #right{
+        grid-area:c;
+
+        padding:1rem;
+    }
+}
